@@ -1,0 +1,7 @@
+<p>이번주 추천 숫자는 <%= @new_number.numbers %></p>
+<a href="/lotto/new">새 번호 발급받기</a>
+<ul>
+    <% @numbers.each do |number| %>
+    <li><%= number.numbers %></li>
+    <% end %>
+</ul>
