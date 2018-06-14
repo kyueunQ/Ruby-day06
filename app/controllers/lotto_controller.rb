@@ -2,6 +2,7 @@ class LottoController < ApplicationController
     
     def index
         @new_number = Lotto.last
+        @new_number.class
         @numbers = Lotto.all
     end
     
